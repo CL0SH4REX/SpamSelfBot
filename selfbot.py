@@ -1,5 +1,4 @@
 import os
-from os import system, name
 import discord
 from discord.role import Role
 from discord.utils import get
@@ -9,16 +8,6 @@ from discord.ext import commands
 token = os.environ["TOKEN"]
 
 client = commands.Bot(command_prefix='!', self_bot=True)
-
-def cls():
-	if name == "nt":
-		_ = system("cls")
-	else:
-		_ = system("clear")
-
-spam = True
-
-cls()
 
 @client.event
 async def on_ready():
