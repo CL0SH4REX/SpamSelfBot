@@ -1,3 +1,4 @@
+import os
 from os import system, name
 import discord
 from discord.role import Role
